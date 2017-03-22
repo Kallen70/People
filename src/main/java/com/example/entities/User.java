@@ -17,17 +17,31 @@ public class User {
     @Column(nullable = false)
     String username;
 
+
+
     @Column(nullable = false)
     String address;
 
     @Column(nullable = false)
     String email;
 
+
+
     @Column(nullable = false)
+
     String password;
 
     @Column(nullable = false)
     String phonenumber;
+
+
+
+
+
+
+
+
+
 
     public int getId() {
         return id;
