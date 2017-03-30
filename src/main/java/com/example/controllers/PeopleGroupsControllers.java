@@ -15,6 +15,7 @@ import java.util.List;
 public class PeopleGroupsControllers {
     @Autowired
     UserRepository users;
+    
     @RequestMapping(path = "/user", method = RequestMethod.GET)
     public List<User> getUsers() {
         return (List<User>) users.findAll();
@@ -24,7 +25,8 @@ public class PeopleGroupsControllers {
     users.save(user);
     }
     @RequestMapping(path = "/user", method = RequestMethod.PUT)
-    public void updateUser(@RequestBody User user) {
+    public void updateUser(@RequestBody User user)
+    {
         users.save(user);
     }
     @RequestMapping(path = "/user/{id}", method = RequestMethod.DELETE)
