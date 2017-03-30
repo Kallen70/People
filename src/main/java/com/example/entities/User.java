@@ -36,12 +36,17 @@ public class User {
 
 
 
+public User(){
 
+}
 
-
-
-
-
+    public User(String username, String address, String email, String password, String phonenumber) {
+        this.username = username;
+        this.address = address;
+        this.email = email;
+        this.password = password;
+        this.phonenumber = phonenumber;
+    }
 
     public int getId() {
         return id;
